@@ -32,10 +32,4 @@ $this->params['breadcrumbs'][] = $this->title;
           ?>
     </div>
 
-    <div class="col-md-12">   
-        <?= $form->field($model,'readMe')->textarea(['rows'=>50, 'readonly'=>true,'value'=>$readMeText]); ?>
-    </div>
-    </div>
-    <?php $form =  ActiveForm::end()?>
-
 </div>
