@@ -31,6 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
           <?= $form->field($model,'name')->dropDownList(['Prompt'=>'--Select--']);
           ?>
     </div>
+
+    <div class="col-md-12">   
+        <?= $form->field($model,'readMe')->textarea(['rows'=>50, 'readonly'=>true,'value'=>$readMeText]); ?>
+    </div>
     </div>
     <?php $form =  ActiveForm::end()?>
 

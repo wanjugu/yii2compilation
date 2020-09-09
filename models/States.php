@@ -15,6 +15,7 @@ use Yii;
  */
 class States extends \yii\db\ActiveRecord
 {
+    public $readMe;
     /**
      * {@inheritdoc}
      */
@@ -33,6 +34,8 @@ class States extends \yii\db\ActiveRecord
             [['country_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
             [['country_id'], 'exist', 'skipOnError' => true, 'targetClass' => Country::className(), 'targetAttribute' => ['country_id' => 'id']],
+            [['readMe'],'string']
+            
         ];
     }
 
